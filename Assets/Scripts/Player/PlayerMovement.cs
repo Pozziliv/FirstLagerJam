@@ -9,8 +9,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _minHeadY = -40f;
 
     [SerializeField] private Animator _animator;
-
-    [SerializeField] private float _goSpeed = 1.5f;
     private float _speed = 1.5f;
 
     private Vector3 _direction;
