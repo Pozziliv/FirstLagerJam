@@ -41,12 +41,12 @@ public class PlayerMovement : MonoBehaviour
 
         _direction = new Vector3(_horizontal, 0, _vertical).normalized;
         _direction = _camera.TransformDirection(_direction);
-        _direction = new Vector3(_direction.x, 0, _direction.z).normalized;
+        _direction = new Vector3(_direction.x, 0, _direction.z).normalized * _speed;
     }
 
     private void FixedUpdate()
     {
-        _rb.velocity = _direction * _speed;
+        _rb.velocity = new Vector3(_direction.x, _rb.velocity.y, _direction.z);
         _rotationY += Input.GetAxis("Mouse Y") * _sensivity;
         _rotationY = Mathf.Clamp(_rotationY, _minHeadY, _maxHeadY);
         float rotationX = _transform.eulerAngles.y + Input.GetAxis("Mouse X") * _sensivity;

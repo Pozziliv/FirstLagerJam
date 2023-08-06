@@ -24,12 +24,10 @@ public class DialogueSystem : MonoBehaviour
 
     public void StartDialogue(string dialogueFileName)
     {
-        Debug.Log(gameObject.name);
         foreach (var file in _dialogueTexts)
         {
             if(file.Contains(dialogueFileName))
             {
-                Debug.Log(file.Replace("\n", ""));
                 _dialogueLines = file.Replace("\n", "").Split('\r');
                 break;
             }

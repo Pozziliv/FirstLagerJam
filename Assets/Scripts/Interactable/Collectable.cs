@@ -21,6 +21,11 @@ public class Collectable : MonoBehaviour, IInteractable
             _outline.enabled = true;
             _isActivate = true;
         }
+        else
+        {
+            _outline.enabled = false;
+            _isActivate = false;
+        }
     }
 
     public void Interact()
@@ -31,6 +36,7 @@ public class Collectable : MonoBehaviour, IInteractable
             _questSystem.NextQuest();
             _outline.enabled = false;
             _isActivate = false;
+            Destroy(this.gameObject);
         }
     }
 }

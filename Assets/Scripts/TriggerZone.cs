@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimalWall : MonoBehaviour
+public class TriggerZone : MonoBehaviour
 {
     [SerializeField] private int _questIndex;
     [SerializeField] private Quests _questSystem;
@@ -21,6 +21,11 @@ public class AnimalWall : MonoBehaviour
         {
             _outline.enabled = true;
             _isActivate = true;
+        }
+        else
+        {
+            _outline.enabled = false;
+            _isActivate = false;
         }
     }
 
