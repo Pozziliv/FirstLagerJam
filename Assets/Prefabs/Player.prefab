@@ -7198,6 +7198,7 @@ MonoBehaviour:
   _maxHeadY: 80
   _minHeadY: -75
   _animator: {fileID: 8722876402873192521}
+  _speed: 4
 --- !u!114 &3509292362144119304
 MonoBehaviour:
   m_ObjectHideFlags: 0

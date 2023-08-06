@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _minHeadY = -40f;
 
     [SerializeField] private Animator _animator;
-    private float _speed = 1.5f;
+    [SerializeField] private float _speed = 3f;
 
     private Vector3 _direction;
     private float _horizontal, _vertical;
@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
         _direction = new Vector3(_horizontal, 0, _vertical).normalized;
         _direction = _camera.TransformDirection(_direction);
-        _direction = new Vector3(_direction.x, 0, _direction.z);
+        _direction = new Vector3(_direction.x, 0, _direction.z).normalized;
     }
 
     private void FixedUpdate()
