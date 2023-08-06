@@ -2,10 +2,21 @@
 
 public class Collectable : MonoBehaviour, IInteractable
 {
-    [SerializeField] private Sprite _icon;
 
+    public Item _Item;
+    public InventoryManage manager;
     public void Interact()
     {
         Debug.Log("Interact");
+
+        Pickip();
+    }
+
+    private void Pickip()
+    {
+        manager.AddToList(_Item);
+
+        manager.ListItems(_Item);
+        Destroy(gameObject);
     }
 }
