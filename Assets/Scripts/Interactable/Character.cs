@@ -21,13 +21,13 @@ public class Character : MonoBehaviour, IInteractable
 
     private void Update()
     {
-        if (_questIndexs[nowIndex] == _questSystem._questsIndex)
+        if (_questSystem != null && _questIndexs[nowIndex] == _questSystem._questsIndex)
         {
             if (_outline != null)
                 _outline.enabled = true;
             _isActivate = true;
         }
-        else
+        else if (_questSystem != null)
         {
             if (_outline != null)
                 _outline.enabled = false;
@@ -45,7 +45,7 @@ public class Character : MonoBehaviour, IInteractable
         if (_isActivate)
         {
             _dialogueSystem.StartDialogue(_dialogueFileName[nowIndex]);
-            if(_questIndexs.Length-1 > nowIndex)
+            if(_questSystem != null && _questIndexs.Length-1 > nowIndex)
                 nowIndex++;
         }
     }

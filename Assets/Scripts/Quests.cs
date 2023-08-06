@@ -28,6 +28,6 @@ public class Quests : MonoBehaviour
             _darkness.color = new Color(0, 0, 0, _alpha);
             yield return _darkTime;
         }
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

@@ -15,6 +15,7 @@ public class DialogueSystem : MonoBehaviour
     private int _index;
 
     [SerializeField] private Quests _questSystem;
+    [SerializeField] private Heart _Heart;
 
     private void Awake()
     {
@@ -65,6 +66,8 @@ public class DialogueSystem : MonoBehaviour
             
             if(_questSystem != null)
                 _questSystem.NextQuest();
+            if (_Heart != null)
+                StartCoroutine(_Heart.End());
         }
     }
 
