@@ -10,6 +10,7 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private TMP_Text _text;
     [SerializeField] private WaitForSeconds _waiting = new WaitForSeconds(0.06f);
 
+    [SerializeField] private List<TextAsset> _dialogueFiles = new List<TextAsset>();
     private List<string> _dialogueTexts = new List<string>();
     private string[] _dialogueLines;
     private int _index;
@@ -17,21 +18,13 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private Quests _questSystem;
     [SerializeField] private Heart _Heart;
 
-    private void Awake()
-    {
-        foreach(var file in new DirectoryInfo("Assets\\Dialogues\\").GetFiles("*.txt", SearchOption.AllDirectories))
-        {
-            _dialogueTexts.Add(file.Name + "\r" + File.ReadAllText(file.FullName));
-        }
-    }
-
     public void StartDialogue(string dialogueFileName)
     {
-        foreach (var file in _dialogueTexts)
+        foreach (var file in _dialogueFiles)
         {
-            if(file.Contains(dialogueFileName))
+            if(file.name == dialogueFileName)
             {
-                _dialogueLines = file.Replace("\n", "").Split('\r');
+                _dialogueLines = file.text.Replace("\n", "").Split('\r');
                 break;
             }
         }

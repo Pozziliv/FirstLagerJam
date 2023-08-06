@@ -44360,8 +44360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueFileName:
-  - HeartDialogue
+  _dialogueFile:
+  - {fileID: 4900000, guid: e6b5d637b0f6ec249bc6756740127f87, type: 3}
   _dialogueSystem: {fileID: 983007359}
   _questIndexs: 
   _questSystem: {fileID: 0}
@@ -44379,6 +44379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _darkness: {fileID: 2081153394}
   _alpha: 0
+  isActivated: 0
 --- !u!1 &3895277411823958942
 GameObject:
   m_ObjectHideFlags: 0
@@ -47651,8 +47652,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueFileName:
-  - GoldLabirintDialogue
+  _dialogueFile:
+  - {fileID: 4900000, guid: dc833dae7327f3740ac9301d05826990, type: 3}
   _dialogueSystem: {fileID: 983007359}
   _questIndexs: 
   _questSystem: {fileID: 0}

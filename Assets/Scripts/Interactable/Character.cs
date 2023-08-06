@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour, IInteractable
 {
-    [SerializeField] private string[] _dialogueFileName;
+    [SerializeField] private TextAsset[] _dialogueFile;
     [SerializeField] private DialogueSystem _dialogueSystem;
     [SerializeField] private int[] _questIndexs;
     private int nowIndex = 0;
@@ -44,7 +44,7 @@ public class Character : MonoBehaviour, IInteractable
     {
         if (_isActivate)
         {
-            _dialogueSystem.StartDialogue(_dialogueFileName[nowIndex]);
+            _dialogueSystem.StartDialogue(_dialogueFile[nowIndex].name);
             if(_questSystem != null && _questIndexs.Length-1 > nowIndex)
                 nowIndex++;
         }

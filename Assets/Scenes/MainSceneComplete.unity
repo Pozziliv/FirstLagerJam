@@ -1296,8 +1296,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueFileName:
-  - Colleague2Dialog
+  _dialogueFile:
+  - {fileID: 4900000, guid: fd1b2ae8342ecbf499921f244ef82646, type: 3}
   _dialogueSystem: {fileID: 1699618282}
   _questIndexs: 03000000
   _questSystem: {fileID: 115516525}
@@ -1337,7 +1337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueFileName: []
+  _dialogueFile: []
   _dialogueSystem: {fileID: 1699618282}
   _questIndexs: 
   _questSystem: {fileID: 115516525}
@@ -7196,8 +7196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueFileName:
-  - ChickenDialogue1
+  _dialogueFile:
+  - {fileID: 4900000, guid: c4f49b59f38ce874fb4da840254277ad, type: 3}
   _dialogueSystem: {fileID: 1699618282}
   _questIndexs: 0b000000
   _questSystem: {fileID: 115516525}
@@ -7571,8 +7571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueFileName:
-  - Colleague1Dialog
+  _dialogueFile:
+  - {fileID: 4900000, guid: 10d37609b7284be498c8f3bfe3bf0518, type: 3}
   _dialogueSystem: {fileID: 1699618282}
   _questIndexs: 02000000
   _questSystem: {fileID: 115516525}
@@ -10074,7 +10074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueFileName: []
+  _dialogueFile: []
   _dialogueSystem: {fileID: 1699618282}
   _questIndexs: 
   _questSystem: {fileID: 115516525}
@@ -10952,7 +10952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueFileName: []
+  _dialogueFile: []
   _dialogueSystem: {fileID: 1699618282}
   _questIndexs: 
   _questSystem: {fileID: 115516525}
@@ -11771,7 +11771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueFileName: []
+  _dialogueFile: []
   _dialogueSystem: {fileID: 1699618282}
   _questIndexs: 
   _questSystem: {fileID: 115516525}
@@ -14623,8 +14623,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueFileName:
-  - Colleague3Dialog
+  _dialogueFile:
+  - {fileID: 4900000, guid: 2db3b20d3444a3a4da6a39148f11c030, type: 3}
   _dialogueSystem: {fileID: 1699618282}
   _questIndexs: 04000000
   _questSystem: {fileID: 115516525}
@@ -14829,8 +14829,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueFileName:
-  - Dialogue1Secretary
+  _dialogueFile:
+  - {fileID: 4900000, guid: d33cb621806ce1c439ce8d534f30044f, type: 3}
   _dialogueSystem: {fileID: 1699618282}
   _questIndexs: 00000000
   _questSystem: {fileID: 115516525}
@@ -15035,10 +15035,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueFileName:
-  - BossDialogue1
-  - BossDialogue2
-  - BossDialogue3
+  _dialogueFile:
+  - {fileID: 4900000, guid: 7a433534d828d6c419876942962479e1, type: 3}
+  - {fileID: 4900000, guid: 567fcd30d5f120a4e865b89e0d546114, type: 3}
+  - {fileID: 4900000, guid: 495994754e7f72b45ab489bb63eb61b2, type: 3}
   _dialogueSystem: {fileID: 1699618282}
   _questIndexs: 080000000a0000000c000000
   _questSystem: {fileID: 115516525}
