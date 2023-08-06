@@ -1268,10 +1268,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogueFileName:
-  - Colleague3Dialog
   - Colleague2Dialog
   _dialogueSystem: {fileID: 1699618282}
-  _questIndexs: 0000000002000000
+  _questIndexs: 03000000
   _questSystem: {fileID: 115516525}
 --- !u!114 &158035144
 MonoBehaviour:
@@ -2641,6 +2640,47 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &550274388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8527098178020882810, guid: c8ede4c7535fee642aab0f9cec13eac2,
+    type: 3}
+  m_PrefabInstance: {fileID: 833016794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &550274392
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550274388}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 1, z: 4}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &550274393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550274388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dbe56309f8ead3459dbd8b581663337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questIndex: 1
+  _questSystem: {fileID: 115516525}
 --- !u!43 &565147906
 Mesh:
   m_ObjectHideFlags: 0
@@ -5655,6 +5695,18 @@ PrefabInstance:
       insertIndex: 28
       addedObject: {fileID: 703006340}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8527098178020882810, guid: c8ede4c7535fee642aab0f9cec13eac2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 550274392}
+    - targetCorrespondingSourceObject: {fileID: 8527098178020882810, guid: c8ede4c7535fee642aab0f9cec13eac2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 550274393}
+    - targetCorrespondingSourceObject: {fileID: 2588477962395042419, guid: c8ede4c7535fee642aab0f9cec13eac2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 966081942}
     - targetCorrespondingSourceObject: {fileID: 4401225434311132838, guid: c8ede4c7535fee642aab0f9cec13eac2,
         type: 3}
       insertIndex: -1
@@ -6326,6 +6378,29 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &966081937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2588477962395042419, guid: c8ede4c7535fee642aab0f9cec13eac2,
+    type: 3}
+  m_PrefabInstance: {fileID: 833016794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &966081942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966081937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogueFileName:
+  - ChickenDialogue1
+  _dialogueSystem: {fileID: 1699618282}
+  _questIndexs: 0b000000
+  _questSystem: {fileID: 115516525}
 --- !u!1 &967673738
 GameObject:
   m_ObjectHideFlags: 0
@@ -6338,6 +6413,7 @@ GameObject:
   - component: {fileID: 967673741}
   - component: {fileID: 967673740}
   - component: {fileID: 967673739}
+  - component: {fileID: 967673743}
   m_Layer: 0
   m_Name: Zoo Wall
   m_TagString: Untagged
@@ -6432,6 +6508,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &967673743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967673738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dbe56309f8ead3459dbd8b581663337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questIndex: 0
+  _questSystem: {fileID: 115516525}
 --- !u!1001 &1002900967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6642,9 +6732,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueFileName: []
+  _dialogueFileName:
+  - Colleague1Dialog
   _dialogueSystem: {fileID: 1699618282}
-  _questIndexs: 
+  _questIndexs: 02000000
   _questSystem: {fileID: 115516525}
 --- !u!114 &1032075410
 MonoBehaviour:
@@ -13500,9 +13591,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogueFileName:
-  - HeartDialogue
+  - Colleague3Dialog
   _dialogueSystem: {fileID: 1699618282}
-  _questIndexs: 01000000
+  _questIndexs: 04000000
   _questSystem: {fileID: 115516525}
 --- !u!114 &2002757630
 MonoBehaviour:
@@ -13706,7 +13797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogueFileName:
-  - 
+  - Dialogue1
   _dialogueSystem: {fileID: 1699618282}
   _questIndexs: 00000000
   _questSystem: {fileID: 115516525}
@@ -13911,9 +14002,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c84945b565efc4080a8c905fe3e7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueFileName: []
+  _dialogueFileName:
+  - BossDialogue1
+  - BossDialogue2
+  - BossDialogue3
   _dialogueSystem: {fileID: 1699618282}
-  _questIndexs: 
+  _questIndexs: 080000000a0000000c000000
   _questSystem: {fileID: 115516525}
 --- !u!114 &2098272822
 MonoBehaviour:

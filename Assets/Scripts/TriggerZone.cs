@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class Collectable : MonoBehaviour, IInteractable
+public class AnimalWall : MonoBehaviour
 {
-    [SerializeField] private Sprite _icon;
     [SerializeField] private int _questIndex;
     [SerializeField] private Quests _questSystem;
     private bool _isActivate = false;
@@ -16,21 +17,20 @@ public class Collectable : MonoBehaviour, IInteractable
 
     private void Update()
     {
-        if(_questIndex == _questSystem._questsIndex)
+        if (_questIndex == _questSystem._questsIndex)
         {
             _outline.enabled = true;
             _isActivate = true;
         }
     }
 
-    public void Interact()
+    private void OnTriggerEnter(Collider other)
     {
-        if (_isActivate)
+        if (_isActivate && other.TryGetComponent(out PlayerMovement player))
         {
-            Debug.Log("Interact");
-            _questSystem.NextQuest();
-            _outline.enabled = false;
             _isActivate = false;
+            _outline.enabled = false;
+            _questSystem.NextQuest();
         }
     }
 }
