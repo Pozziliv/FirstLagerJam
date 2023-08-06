@@ -10,6 +10,7 @@ public class PlayerInterract : MonoBehaviour
 
     private float _rayDistance = 3f;
 
+    private Heart _heart;
     private void Update()
     {
         if (Input.GetKeyDown(_interractKey))
@@ -30,6 +31,10 @@ public class PlayerInterract : MonoBehaviour
             {
                 
                 interactable.Interact();
+                if (target.gameObject.TryGetComponent(out Heart _heart))
+                {
+                    _heart.isActivated = true;
+                }
                 break;
             }
         }

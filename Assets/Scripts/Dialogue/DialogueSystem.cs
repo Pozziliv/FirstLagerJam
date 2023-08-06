@@ -66,7 +66,7 @@ public class DialogueSystem : MonoBehaviour
             
             if(_questSystem != null)
                 _questSystem.NextQuest();
-            if (_Heart != null)
+            if (_Heart != null && _Heart.isActivated)
                 StartCoroutine(_Heart.End());
         }
     }

@@ -9,6 +9,7 @@ public class Heart : MonoBehaviour
     [SerializeField] private Image _darkness;
     private WaitForSeconds _darkTime = new WaitForSeconds(0.02f);
     [SerializeField] private float _alpha = 0;
+    public bool isActivated = false;
 
     public IEnumerator End()
     {
