@@ -31,7 +31,7 @@ public class DialogueSystem : MonoBehaviour
 
         _dialogueWindow.SetActive(true);
         _text.text = string.Empty;
-        _index = 1;
+        _index = 0;
         StartCoroutine(PrintText(_dialogueLines));
     }
 

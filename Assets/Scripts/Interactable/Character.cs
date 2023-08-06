@@ -44,6 +44,7 @@ public class Character : MonoBehaviour, IInteractable
     {
         if (_isActivate)
         {
+            _isActivate = false;
             _dialogueSystem.StartDialogue(_dialogueFile[nowIndex].name);
             if(_questSystem != null && _questIndexs.Length-1 > nowIndex)
                 nowIndex++;
