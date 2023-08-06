@@ -14,6 +14,8 @@ public class DialogueSystem : MonoBehaviour
     private string[] _dialogueLines;
     private int _index;
 
+    [SerializeField] private Quests _questSystem;
+
     private void Awake()
     {
         foreach(var file in new DirectoryInfo("Assets\\Dialogues\\").GetFiles("*.txt", SearchOption.AllDirectories))
@@ -60,6 +62,9 @@ public class DialogueSystem : MonoBehaviour
         {
             StopAllCoroutines();
             _dialogueWindow.SetActive(false);
+            
+            if(_questSystem != null)
+                _questSystem.NextQuest();
         }
     }
 

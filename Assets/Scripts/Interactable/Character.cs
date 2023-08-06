@@ -16,20 +16,27 @@ public class Character : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        _outline = GetComponent<Outline>();
+        TryGetComponent<Outline>(out _outline);
     }
 
     private void Update()
     {
         if (_questIndexs[nowIndex] == _questSystem._questsIndex)
         {
-            _outline.enabled = true;
+            if (_outline != null)
+                _outline.enabled = true;
             _isActivate = true;
         }
         else
         {
-            _outline.enabled = false;
+            if (_outline != null)
+                _outline.enabled = false;
             _isActivate = false;
+        }
+
+        if(_questSystem == null)
+        {
+            _isActivate = true;
         }
     }
 
@@ -40,7 +47,6 @@ public class Character : MonoBehaviour, IInteractable
             _dialogueSystem.StartDialogue(_dialogueFileName[nowIndex]);
             if(_questIndexs.Length-1 > nowIndex)
                 nowIndex++;
-            _questSystem.NextQuest();
         }
     }
 }
