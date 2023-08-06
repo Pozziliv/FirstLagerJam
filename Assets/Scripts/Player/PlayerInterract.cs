@@ -26,9 +26,9 @@ public class PlayerInterract : MonoBehaviour
 
         foreach (Collider target in targets)
         {
-            Debug.Log(target.gameObject.name);
             if (target.gameObject.TryGetComponent(out IInteractable interactable))
             {
+                
                 interactable.Interact();
                 break;
             }

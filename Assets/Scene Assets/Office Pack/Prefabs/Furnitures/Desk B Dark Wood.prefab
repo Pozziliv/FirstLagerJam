@@ -93,7 +93,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2567181897890207907}
   - component: {fileID: 7095128916378871084}
-  - component: {fileID: 1928663070192040106}
+  - component: {fileID: 2262086074929355842}
+  - component: {fileID: 7490747517242869100}
   m_Layer: 0
   m_Name: Desk B Dark Wood
   m_TagString: Untagged
@@ -146,8 +147,8 @@ LODGroup:
     renderers:
     - renderer: {fileID: 3469488646288785744}
   m_Enabled: 1
---- !u!64 &1928663070192040106
-MeshCollider:
+--- !u!65 &2262086074929355842
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -164,10 +165,30 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 3
+  m_Size: {x: 1.6342374, y: 1.6221156, z: 3.6463175}
+  m_Center: {x: 0.041489724, y: 0.3110578, z: 0.08056486}
+--- !u!65 &7490747517242869100
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2948633970280972825}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.5856056, y: 1.6221156, z: 1.780983}
+  m_Center: {x: -1.4341934, y: 0.3110578, z: -0.85210747}
 --- !u!1 &4085993739296309594
 GameObject:
   m_ObjectHideFlags: 0

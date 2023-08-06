@@ -16,7 +16,7 @@ public class DialogueSystem : MonoBehaviour
 
     private void Awake()
     {
-        foreach(var file in new DirectoryInfo("Assets\\Dialogues\\").GetFiles())
+        foreach(var file in new DirectoryInfo("Assets\\Dialogues\\").GetFiles("*.txt", SearchOption.AllDirectories))
         {
             _dialogueTexts.Add(file.Name + "\r" + File.ReadAllText(file.FullName));
         }
@@ -24,10 +24,12 @@ public class DialogueSystem : MonoBehaviour
 
     public void StartDialogue(string dialogueFileName)
     {
+        Debug.Log(gameObject.name);
         foreach (var file in _dialogueTexts)
         {
             if(file.Contains(dialogueFileName))
             {
+                Debug.Log(file.Replace("\n", ""));
                 _dialogueLines = file.Replace("\n", "").Split('\r');
                 break;
             }
